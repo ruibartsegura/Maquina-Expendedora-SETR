@@ -99,8 +99,9 @@ void button_timer() {
 <br>
 
 #### Botón del joystick:
-Este botón se activa y desactiva cuando se necesita, en mi caso es cuando dentro del caso Servicio paso de mostrar la temperatura y humedad a la selección de bebida, una vez seleccionada se desvincula. Lo vuelvo a vincular cuando entro dentro del caso Admin para las selecciones de modo de este caso, una vez sale del modo Administrador se desvincula. Añadir que está configurado en modo Falling.
-La función vinculada a esta interrupción es sencilla, pone una variable a true, así el programa principal sabe si fue pulsado o no, al terminar cada iteración el programa pone esta msima variable a false. No hace falta controlar los rebotes en etá función ya que solo va a detectar los cambios de caída y nos da igual que haya más de uno en un corto periodo de tiempo debido a que solo se necesita saber si se pulsó o no.
+Este botón se activa y desactiva cuando se necesita, en mi caso es cuando dentro del caso Servicio paso de mostrar la temperatura y humedad a la selección de bebida, una vez seleccionada se desvincula. Lo vuelvo a vincular cuando entro dentro del caso Admin para las selecciones de modo de este caso, una vez sale del modo Administrador se desvincula. Añadir que está configurado en modo Falling.<br>
+La función vinculada a esta interrupción es sencilla, pone una variable a true, así el programa principal sabe si fue pulsado o no, al terminar cada iteración el programa pone esta msima variable a false.
+No hace falta controlar los rebotes en etá función ya que solo va a detectar los cambios de caída y nos da igual que haya más de uno en un corto periodo de tiempo debido a que solo se necesita saber si se pulsó o no.
 ``` c
 // Interruption, when the button of the joysctick is been pressed the variable
 // it is set to true
@@ -108,8 +109,10 @@ void joy_press() {
   joy_pressed = true;
 }
 ```
+<br>
 
-
+### Whatchdog:
+El programa cuenta con un watchdog definido en 8 segundos
 
 
 
