@@ -3,7 +3,7 @@
 Controlador para una máquina expendedora que esté basado en Arduino UNO y en los sensores/actuadores que se proporcionan en el kit Arduino
 
 ## 1.Organización del código
-Para controlar el código he diseñado una máquina de estados con los 3 estados propuestos, Arranque, Servicio y Admin. Dentro de cada etado se ejecutan las funcionalidades descritas en el [enunciado](...).<br><br>
+Para controlar el código he diseñado una máquina de estados con los 3 estados propuestos, Arranque, Servicio y Admin. Dentro de cada etado se ejecutan las funcionalidades descritas en el [enunciado](https://github.com/ruibartsegura/Maquina-Expendedora-SETR/blob/main/enunciado/Practica3.pdf).<br><br>
 Añadir que en la función Administrar precios de Admin implementé una selección extra entre el menú de Admin y modificar el precio,esta es seleccionar el producto a modificar. Esta selección se hace pulsando el joystick.<br>
 Resumen: Menú Admin -> Elegir producto -> Cambiar precio. 
 
