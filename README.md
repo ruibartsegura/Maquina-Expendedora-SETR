@@ -19,9 +19,9 @@ void setup() {
   blink_thread.setInterval(1000);
   blink_thread.onRun(blink_led);
 }
-
 ```
 <br>
+
 En este thread se comprueba si el led esta encendido para apagarlo y sumar uno al contador que al llegar a 3 hará que pase el programa a la siguiente función. De estar apagado lo encenderá.
 ``` c
 // Thread turn on or off the led each sec
@@ -35,7 +35,7 @@ void blink_led() {
     led_on = true;
   }
 }
-```
+``` 
 La comprobación de si toca llamar a este thread se hace en en el loop en el primer caso, Arranque el cual una vez se ha encendido y apagado el LED 3 veces pasará al siguiente caso.
 ``` c
 case ARRANQUE:
