@@ -3,7 +3,9 @@
 Controlador para una máquina expendedora que esté basado en Arduino UNO y en los sensores/actuadores que se proporcionan en el kit Arduino
 
 ## 1.Organización del código
-Para controlar el código he diseñado una máquina de estados con los 3 estados propuestos, Arranque, Servicio y Admin. Dentro de cada etado se ejecutan las funcionalidades descritas en el [enunciado](...)
+Para controlar el código he diseñado una máquina de estados con los 3 estados propuestos, Arranque, Servicio y Admin. Dentro de cada etado se ejecutan las funcionalidades descritas en el [enunciado](...).<br><br>
+Añadir que en la función Administrar precios de Admin implementé una selección extra entre el menú de Admin y modificar el precio,esta es seleccionar el producto a modificar. Esta selección se hace pulsando el joystick.<br>
+Resumen: Menú Admin -> Elegir producto -> Cambiar precio. 
 
 ## 2.Esquema del montaje
 
@@ -19,6 +21,7 @@ void setup() {
 }
 
 ```
+<br>
 En este thread se comprueba si el led esta encendido para apagarlo y sumar uno al contador que al llegar a 3 hará que pase el programa a la siguiente función. De estar apagado lo encenderá.
 ``` c
 // Thread turn on or off the led each sec
@@ -112,12 +115,13 @@ void joy_press() {
 <br>
 
 ### Whatchdog:
-El programa cuenta con un watchdog definido en 8 segundos
-
-
-
-
-
+El programa cuenta con un watchdog definido en 8 segundos y lo actualizo al final de cada iteración del programa.
+``` c
+void setup() {
+  Serial.begin(9600);
+  wdt_disable();
+  wdt_enable(WDTO_8S);
+``` 
 
 
 
