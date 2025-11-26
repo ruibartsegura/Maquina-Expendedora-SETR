@@ -124,7 +124,8 @@ void setup() {
   wdt_disable();
   wdt_enable(WDTO_8S);
 ``` 
-
+## 4.Vídeo del funcionamiento
+[Vídeo del funcionamiento](https://urjc-my.sharepoint.com/:v:/r/personal/r_bartolome_2022_alumnos_urjc_es/Documents/Maquina-Expendedora-SETR/Video_funcionamiento.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ptcSSO)
 
 
 
